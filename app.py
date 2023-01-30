@@ -7,7 +7,7 @@ st.title('Cannibalisation Tool')
 
 # read the csv file and create the dataframe
 # update df = pd.read_csv('your_file.csv') to:
-uploaded_file = st.file_uploader("Choose a CSV file with keywords and SV to process - this should have keywords in first column, and search volume in the second", type='csv')
+uploaded_file = st.file_uploader("Use a GSC API export that includes query and page as the dimensions, exporting clicks, impressions, avg. position and CTR", type='csv')
 
 #update to include slider so you can customise your cannibalisation threshold
 impression_th = st.slider("Input what impression share threshold is required to be marked as potential cannibalisation", min_value=0.0, max_value=1.0, value=0.1) 
